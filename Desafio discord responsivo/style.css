@@ -1,0 +1,151 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  background: #f9f9f9;
+}
+
+/* HEADER */
+.header {
+  height: 100vh;
+  background: url("assests/Header Background.png") no-repeat center center/cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  padding: 0 20px;
+}
+
+.info-header h1 {
+  font-family: "Luckiest Guy", cursive;
+  font-size: 3.5rem;
+  line-height: 1.1;
+}
+
+.info-header p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+
+/* Última section */
+.conteudo-4 .descricao h1 {
+  font-family: "Luckiest Guy", cursive;
+  font-size: 2.5rem;
+  line-height: 1.2;
+}
+
+/* Botões */
+.button-header {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.button-header button {
+  padding: 12px 24px;
+  border: none;
+  border-radius: 30px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.windows {
+  background: white;
+  color: black;
+}
+
+.navegador {
+  background: black;
+  color: white;
+}
+
+/* CONTAINER */
+.container {
+  display: flex;
+  gap: 40px;
+  flex-direction: column;
+  padding: 40px 20px;
+}
+
+/* SECTIONS */
+section {
+  flex: 1;
+  padding: 40px 20px;
+}
+
+.conteudo-1,
+.conteudo-2,
+.conteudo-3,
+.conteudo-4 {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+.descricao {
+  max-width: 600px;
+}
+
+.descricao h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  line-height: 1.3;
+}
+
+.descricao p {
+  font-size: 1.1rem;
+  line-height: 1.5;
+}
+
+/* BG alternados */
+.section-1,
+.section-3 {
+  background-color: white;
+}
+
+.section-2,
+.section-4 {
+  background-color: #f6f6f6;
+}
+
+/* Última section alinhamento especial */
+.conteudo-4 {
+  flex-direction: column;
+  text-align: center;
+}
+
+/* FOOTER */
+footer {
+  background-color: black;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  height: 100px;
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 900px) {
+  .conteudo-1,
+  .conteudo-2,
+  .conteudo-3 {
+    flex-direction: column; /* texto embaixo da imagem */
+    text-align: center;
+  }
+
+  .conteudo-4 {
+    flex-direction: column; /* mantém texto em cima */
+  }
+
+  iframe {
+    height: 260px;
+  }
+}
